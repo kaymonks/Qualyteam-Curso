@@ -1,0 +1,233 @@
+.form-group {
+  margin-bottom: 15px;
+}
+input,
+textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+  box-shadow: none;
+  outline: none;
+  &:focus {
+    box-shadow: 0 0 4px 1px #ababce;
+  }
+}
+input {
+  height: 2.2rem;
+  padding-left: 15px;
+  border-radius: 30px;
+}
+textarea {
+  min-height: 150px;
+  border-radius: 4px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.login {
+  background: #1da0ff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  &--form {
+    height: 220px;
+    min-width: 290px;
+    background: #ffffff;
+    padding: 15px 30px 45px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    button {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+}
+
+.content--container {
+  margin: 15px auto;
+  flex-wrap: wrap;
+  display: flex;
+  max-width: 1090px;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.navbar {
+  display: flex;
+  background: #1da0ff;
+  .navbar--logo-container {
+    flex: 1;
+  }
+  figure,
+  div {
+    flex: 1;
+  }
+  figure {
+    margin: 0.75em;
+  }
+  &--logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &--center-container {
+    display: flex;
+    align-items: center;
+    input {
+      height: 40%;
+      border: none;
+    }
+  }
+  &--right-container {
+    display: flex;
+    justify-content: flex-end;
+    .button--plus {
+      text-decoration: none;
+      text-align: center;
+      height: 100%;
+      width: 90px;
+      color: #ffffff;
+      font-size: 50px;
+      border: 2px solid #ffffff;
+      background: rgba(#000000, 0.17);
+      &:hover {
+        cursor: pointer;
+        background: rgba(#000000, 0.09);
+      }
+      &:active {
+        background: rgba(#000000, 0.37);
+      }
+    }
+  }
+}
+
+button.primary-button {
+  color: #ffffff;
+  background: #1da0ff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.4);
+  &:hover {
+    cursor: pointer;
+    background: rgba(#1da0ff, 0.6);
+  }
+  &:active {
+    background: #025088;
+  }
+}
+
+.card {
+  background: #f0f0f0;
+  min-width: 40%;
+  display: flex;
+  flex: 1;
+  margin: 10px;
+  padding: 15px 0px 15px 15px;
+
+  figure {
+    width: 200px;
+    overflow: hidden;
+    margin: -15px 0px -15px 15px;
+    background: #000;
+    .card--image--background {
+      height: 100%;
+      background-size: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &--content {
+    flex: 1;
+    h2 {
+      margin-top: 0;
+    }
+    .card--description {
+      min-height: 115px;
+    }
+  }
+  &--footer {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+}
+
+.recipe {
+  width: 100%;
+  &--container {
+    display: flex;
+    width: 100%;
+    figure {
+      flex: 1;
+      margin: 0;
+      background: slateblue;
+    }
+    &-image {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &--info {
+    min-width: 480px;
+    flex: 1 1;
+    h1 {
+      margin: 0 15px;
+      line-height: 4.6rem;
+    }
+
+    &--description {
+      padding: 15px;
+      background: #c4c4c4;
+      p {
+        height: 100%;
+        min-height: 320px;
+      }
+    }
+  }
+  &--preparation {
+    background: #c4c4c4;
+    margin: 15px 0;
+    padding: 15px;
+    min-height: 220px;
+    h2 {
+      margin-top: 0;
+    }
+  }
+}
+
+.register {
+  width: 100%;
+  &--container {
+    position: relative;
+    background: rgba($color: #c4c4c4, $alpha: 0.2);
+    padding: 15px 0px 90px 0px;
+    &--form {
+      display: flex;
+    }
+    &--side {
+      width: 100%;
+      padding: 0 30px;
+      &:first-child {
+        border-right: 1px solid #ccc;
+      }
+    }
+    button {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+}
